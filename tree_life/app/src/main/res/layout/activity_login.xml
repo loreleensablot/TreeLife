@@ -10,61 +10,85 @@
         android:id="@+id/ivLogo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/tilPassword"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.2"
         app:layout_constraintVertical_chainStyle="packed"
-        app:srcCompat="@drawable/logo_and_text_tree_life_white"/>
+        app:srcCompat="@drawable/logo_and_text_tree_life_white" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tilUsername"
-        android:layout_marginStart="@dimen/dim_10dp"
-        android:layout_marginEnd="@dimen/dim_10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/dim_25dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="@dimen/dim_25dp"
         android:hint="@string/username"
         android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ivLogo">
 
         <androidx.appcompat.widget.AppCompatEditText
             android:id="@+id/etUserName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:drawableStart="@drawable/ic_username_white_24dp"
+            android:drawablePadding="@dimen/dim_10dp"
             android:inputType="textEmailAddress"
             android:shadowColor="@color/white"
             android:singleLine="true"
-            android:drawableStart="@mipmap/ic_launcher"
             android:textColor="@color/white"
-            android:textColorHighlight="@color/colorAccent"
+            android:textColorHighlight="@color/light_green"
             android:textColorHint="@color/white"
             android:textSize="@dimen/dimen_18sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
+
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tilPassword"
-        android:layout_marginStart="@dimen/dim_10dp"
-        android:layout_marginEnd="@dimen/dim_10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dim_25dp"
+        android:layout_marginStart="@dimen/dim_25dp"
         android:layout_centerVertical="true"
-        android:hint="@string/username"
+        android:hint="@string/password"
         android:textColorHint="@color/white"
-        app:layout_constraintTop_toBottomOf="@+id/ivLogo">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tilUsername">
 
         <androidx.appcompat.widget.AppCompatEditText
             android:id="@+id/etPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textEmailAddress"
+            android:backgroundTint="@color/white"
+            android:drawableStart="@drawable/ic_lock_white_24dp"
+            android:inputType="textPassword"
+            android:drawablePadding="@dimen/dim_10dp"
             android:shadowColor="@color/white"
             android:singleLine="true"
-            android:drawableStart="@mipmap/ic_launcher"
             android:textColor="@color/white"
-            android:textColorHighlight="@color/colorAccent"
+            android:textColorHighlight="@color/light_green"
             android:textColorHint="@color/white"
             android:textSize="@dimen/dimen_18sp" />
     </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLogin"
+        style="@style/Button"
+        android:background="@drawable/selector_rounded_button_light_green"
+        android:text="@string/login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tilPassword"
+        app:layout_constraintVertical_chainStyle="packed" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
