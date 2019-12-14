@@ -1,4 +1,4 @@
-package com.thesis.treelife
+package com.thesis.treelife.ui.main
 
 import android.os.Bundle
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -7,6 +7,7 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
+import com.thesis.treelife.R
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -19,7 +20,12 @@ class MainActivity : AppCompatActivity() {
         val navView : BottomNavigationView = nav_view
         val navController = findNavController(R.id.nav_host_fragment)
         val appBarConfiguration = AppBarConfiguration(
-            setOf(R.id.navigation_home, R.id.navigation_camera, R.id.navigation_gallery, R.id.navigation_user)
+            setOf(
+                R.id.navigation_home,
+                R.id.navigation_camera,
+                R.id.navigation_gallery,
+                R.id.navigation_user
+            )
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
