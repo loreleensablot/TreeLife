@@ -18,6 +18,7 @@
     <string name="name">Name</string>
     <string name="change_password">Change password</string>
     <string name="about">About</string>
-    <string name="forgot_password">Forgot password? |</string>
-    <string name="already_registered">Already registered?  |</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="already_registered">Already registered?</string>
+    <string name="vertical_line">|</string>
 </resources>

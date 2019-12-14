@@ -1,5 +1,6 @@
 package com.thesis.treelife.treelife.ui.login
 
+import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
@@ -25,18 +26,21 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
     override fun onClick(view: View?) {
         when (view?.id) {
             btnLogin.id -> launchHome()
-            tvRegister.id -> launchRegister()
+            tvRegister.id -> RegisterActivity.launchRegister(this)
         }
     }
 
-    private fun launchRegister() {
-        startActivity(Intent(this, RegisterActivity::class.java))
-        finish()
-    }
 
     private fun launchHome() {
         startActivity(Intent(this, MainActivity::class.java))
         finish()
     }
 
+    companion object {
+        fun launchLoginScreen(activity: Activity) {
+            val intent = Intent(activity, LoginActivity::class.java)
+            activity.startActivity(intent)
+            activity.finish()
+        }
+    }
 }

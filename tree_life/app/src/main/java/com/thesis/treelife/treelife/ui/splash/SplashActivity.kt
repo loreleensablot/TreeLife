@@ -6,6 +6,7 @@ import android.os.Handler
 import androidx.appcompat.app.AppCompatActivity
 import com.thesis.treelife.R
 import com.thesis.treelife.treelife.ui.landing.LandingActivity
+import com.thesis.treelife.treelife.ui.login.LoginActivity
 import com.thesis.treelife.treelife.ui.main.MainActivity
 
 class SplashActivity : AppCompatActivity() {
@@ -22,12 +23,12 @@ class SplashActivity : AppCompatActivity() {
     private fun startSplashScreen() {
         myHandler = Handler()
         myHandler.postDelayed({
-            gotoLandingScreen()
+            gotoLoginScreen()
         }, SPLASH_TIME)
     }
 
-    private fun gotoLandingScreen(){
-        val mainActivityIntent = Intent(applicationContext, LandingActivity::class.java)
+    private fun gotoLoginScreen(){
+        val mainActivityIntent = Intent(applicationContext, LoginActivity::class.java)
         startActivity(mainActivityIntent)
         finish()
     }

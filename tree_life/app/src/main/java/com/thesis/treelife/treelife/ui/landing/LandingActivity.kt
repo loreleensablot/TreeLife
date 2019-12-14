@@ -9,6 +9,7 @@ import com.thesis.treelife.treelife.ui.login.LoginActivity
 import com.thesis.treelife.treelife.ui.register.RegisterActivity
 import kotlinx.android.synthetic.main.activity_landing.*
 
+//Not used
 class LandingActivity : AppCompatActivity(), View.OnClickListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
