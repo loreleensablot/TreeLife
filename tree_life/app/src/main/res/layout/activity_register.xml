@@ -182,26 +182,13 @@
         android:id="@+id/tvAlreadyRegistered"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:fontFamily="@font/roboto_regular"
         android:padding="@dimen/dim_5dp"
-        android:layout_marginTop="16dp"
         android:text="@string/already_registered"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.42"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
-
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/tvLogin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/roboto_regular"
-        android:padding="@dimen/dim_5dp"
-        android:text="@string/login"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/tvAlreadyRegistered"
-        app:layout_constraintTop_toTopOf="@+id/tvAlreadyRegistered" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

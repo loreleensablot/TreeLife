@@ -14,4 +14,7 @@
     <dimen name="dim_5dp">5dp</dimen>
     <dimen name="dimen_16sp">16sp</dimen>
     <dimen name="dim_24dp">24dp</dimen>
+    <dimen name="page_indicator_height">55dp</dimen>
+    <dimen name="dimen_30dp">30dp</dimen>
+    <dimen name="dimen_18dp">18dp</dimen>
 </resources>

@@ -19,12 +19,12 @@ class RegisterActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     fun initUi() {
-        tvLogin.setOnClickListener(this)
+        tvAlreadyRegistered.setOnClickListener(this)
     }
 
     override fun onClick(view: View?) {
         when(view?.id) {
-            tvLogin.id -> LoginActivity.launchLoginScreen(this)
+            tvAlreadyRegistered.id -> LoginActivity.launchLoginScreen(this)
             tvRegister.id -> TODO()
         }
     }
