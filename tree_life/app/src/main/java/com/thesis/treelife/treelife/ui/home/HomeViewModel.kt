@@ -1,4 +1,4 @@
-package com.thesis.treelife.ui.ui.home
+package com.thesis.treelife.treelife.ui.home
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

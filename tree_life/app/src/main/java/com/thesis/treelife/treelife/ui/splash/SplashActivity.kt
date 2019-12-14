@@ -1,11 +1,12 @@
-package com.thesis.treelife.ui.ui.splash
+package com.thesis.treelife.treelife.ui.splash
 
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import androidx.appcompat.app.AppCompatActivity
 import com.thesis.treelife.R
-import com.thesis.treelife.ui.ui.main.MainActivity
+import com.thesis.treelife.treelife.ui.landing.LandingActivity
+import com.thesis.treelife.treelife.ui.main.MainActivity
 
 class SplashActivity : AppCompatActivity() {
 
@@ -21,12 +22,12 @@ class SplashActivity : AppCompatActivity() {
     private fun startSplashScreen() {
         myHandler = Handler()
         myHandler.postDelayed({
-            goToMainActivity()
+            gotoLandingScreen()
         }, SPLASH_TIME)
     }
 
-    private fun goToMainActivity(){
-        val mainActivityIntent = Intent(applicationContext, MainActivity::class.java)
+    private fun gotoLandingScreen(){
+        val mainActivityIntent = Intent(applicationContext, LandingActivity::class.java)
         startActivity(mainActivityIntent)
         finish()
     }

@@ -1,4 +1,4 @@
-package com.thesis.treelife.ui.ui.camera
+package com.thesis.treelife.treelife.ui.camera
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

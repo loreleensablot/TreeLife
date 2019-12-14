@@ -1,4 +1,4 @@
-package com.thesis.treelife.ui.utils
+package com.thesis.treelife.treelife.utils
 
 import android.content.Context
 import android.net.Uri

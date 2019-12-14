@@ -1,4 +1,4 @@
-package com.thesis.treelife.ui.uri
+package com.thesis.treelife.treelife.uri
 
 import androidx.core.content.FileProvider
 
