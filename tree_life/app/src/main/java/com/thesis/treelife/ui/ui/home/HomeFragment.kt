@@ -1,4 +1,4 @@
-package com.thesis.treelife.ui.home
+package com.thesis.treelife.ui.ui.home
 
 import android.os.Bundle
 import android.view.LayoutInflater

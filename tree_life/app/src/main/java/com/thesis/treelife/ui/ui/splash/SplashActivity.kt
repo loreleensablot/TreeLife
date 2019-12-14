@@ -1,11 +1,11 @@
-package com.thesis.treelife.ui.splash
+package com.thesis.treelife.ui.ui.splash
 
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import androidx.appcompat.app.AppCompatActivity
 import com.thesis.treelife.R
-import com.thesis.treelife.ui.main.MainActivity
+import com.thesis.treelife.ui.ui.main.MainActivity
 
 class SplashActivity : AppCompatActivity() {
 

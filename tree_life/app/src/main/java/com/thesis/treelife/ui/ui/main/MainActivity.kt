@@ -1,4 +1,4 @@
-package com.thesis.treelife.ui.main
+package com.thesis.treelife.ui.ui.main
 
 import android.os.Bundle
 import com.google.android.material.bottomnavigation.BottomNavigationView
