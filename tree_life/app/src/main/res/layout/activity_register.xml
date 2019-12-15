@@ -37,7 +37,6 @@
         app:layout_constraintTop_toBottomOf="@+id/appCompatTextView" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/selectPhoto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_camera_white_24dp"
@@ -61,7 +60,6 @@
         app:layout_constraintVertical_chainStyle="packed">
 
         <androidx.appcompat.widget.AppCompatEditText
-            android:id="@+id/etFirstName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/white"
@@ -91,7 +89,6 @@
         app:layout_constraintTop_toBottomOf="@+id/tilFirstName">
 
         <androidx.appcompat.widget.AppCompatEditText
-            android:id="@+id/etLastName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/white"
@@ -121,7 +118,6 @@
         app:layout_constraintTop_toBottomOf="@+id/tilLastName">
 
         <androidx.appcompat.widget.AppCompatEditText
-            android:id="@+id/etEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/white"
@@ -151,7 +147,6 @@
         app:layout_constraintTop_toBottomOf="@+id/tilEmail">
 
         <androidx.appcompat.widget.AppCompatEditText
-            android:id="@+id/etPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/white"

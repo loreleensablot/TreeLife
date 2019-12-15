@@ -3,28 +3,5 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <androidx.viewpager.widget.ViewPager
-        android:id="@+id/viewpager"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@+id/viewPagerIndicator"/>
 
-    <RelativeLayout
-        android:id="@+id/viewPagerIndicator"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/page_indicator_height"
-        android:layout_alignParentBottom="true"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="@dimen/dim_15dp"
-        android:gravity="center">
-
-        <LinearLayout
-            android:id="@+id/pageIndicator"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_centerHorizontal="true"
-            android:gravity="center"
-            android:orientation="horizontal"/>
-
-    </RelativeLayout>
 </RelativeLayout>

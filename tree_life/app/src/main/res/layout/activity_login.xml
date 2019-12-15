@@ -33,7 +33,6 @@
         app:layout_constraintTop_toBottomOf="@+id/ivLogo">
 
         <androidx.appcompat.widget.AppCompatEditText
-            android:id="@+id/etUserName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/white"
@@ -64,7 +63,6 @@
         app:layout_constraintTop_toBottomOf="@+id/tilUsername">
 
         <androidx.appcompat.widget.AppCompatEditText
-            android:id="@+id/etPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/white"
