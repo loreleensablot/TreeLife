@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "668585073334",
+    "firebase_url": "https://tree-life-d78b3.firebaseio.com",
+    "project_id": "tree-life-d78b3",
+    "storage_bucket": "tree-life-d78b3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:668585073334:android:c8bc2e4cf004583f6a6417",
+        "android_client_info": {
+          "package_name": "com.thesis.treelife"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "668585073334-uvmthof6pkev6f4b2nt73i5f7t4c9m7i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8AKfuRheSNjN6v-1iMx37RkyE1xIV5zM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "668585073334-uvmthof6pkev6f4b2nt73i5f7t4c9m7i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,6 +1,24 @@
 <resources>
     <string name="app_name">Tree Life</string>
     <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_camera">Camera</string>
+    <string name="title_gallery">Gallery</string>
+    <string name="title_user">User</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="no_account">No account?</string>
+    <string name="register">Register</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="create_your_account">Create your account</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="email">Email</string>
+    <string name="log_out">Log out</string>
+    <string name="name">Name</string>
+    <string name="change_password">Change password</string>
+    <string name="about">About</string>
+    <string name="forgot_password">Not yet registered? | Register</string>
+    <string name="already_registered">Already registered? | Login</string>
+
 </resources>
