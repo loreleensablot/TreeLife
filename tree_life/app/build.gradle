@@ -45,6 +45,8 @@ dependencies {
     implementation 'androidx.navigation:navigation-ui-ktx:2.1.0'
     implementation 'com.google.firebase:firebase-analytics:17.2.1'
     implementation 'de.hdodenhof:circleimageview:3.0.1'
+    implementation 'org.tensorflow:tensorflow-android:1.8.0'
+
 
     //tests
     testImplementation 'junit:junit:4.12'
