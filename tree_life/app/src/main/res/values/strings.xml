@@ -20,5 +20,6 @@
     <string name="about">About</string>
     <string name="forgot_password">Not yet registered? | Register</string>
     <string name="already_registered">Already registered? | Login</string>
+    <string name="trees">Trees</string>
 
 </resources>
