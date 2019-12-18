@@ -3,16 +3,23 @@ package com.thesis.treelife.treelife.ui.camera
 import android.Manifest
 import android.content.Intent
 import android.content.pm.PackageManager
+import android.graphics.Bitmap
+import android.graphics.BitmapFactory
 import android.os.Bundle
 import android.os.Environment
+import android.os.Handler
 import android.provider.MediaStore
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
+import com.thesis.treelife.treelife.uri.getCroppedBitmap
 import com.thesis.treelife.treelife.utils.getUriFromFilePath
 import com.thesis.treelife.R
+import com.thesis.treelife.treelife.ui.classifier.Classifier
+import com.thesis.treelife.treelife.ui.classifier.Result
+import kotlinx.android.synthetic.main.fragment_camera.*
 import java.io.File
 
 private const val REQUEST_PERMISSIONS = 1
@@ -20,7 +27,9 @@ private const val REQUEST_TAKE_PICTURE = 2
 
 class CameraFragment : Fragment() {
 
+    private lateinit var classifier: Classifier
     private var photoFilePath = ""
+    private val handler = Handler()
 
 
     override fun onCreateView(
@@ -82,20 +91,43 @@ class CameraFragment : Fragment() {
         grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-        super.onActivityResult(requestCode, resultCode, data);
         val file = File(photoFilePath)
-        when {
-            requestCode == REQUEST_TAKE_PICTURE && file.exists() -> {
-                //classify photo
-            }
+        if (requestCode == REQUEST_TAKE_PICTURE && file.exists()) {
+//            classifyPhoto(file)
         }
     }
 
-    companion object {
-
-        fun newInstance(): CameraFragment {
-            return CameraFragment()
-        }
+    private fun classifyPhoto(file: File) {
+        val photoBitmap = BitmapFactory.decodeFile(file.absolutePath)
+        val croppedBitmap = getCroppedBitmap(photoBitmap)
+        classifyAndShowResult(croppedBitmap)
+        imagePhoto.setImageBitmap(photoBitmap)
     }
 
+    private fun classifyAndShowResult(croppedBitmap: Bitmap) {
+        runInBackground(
+            Runnable {
+                val result = classifier.recognizeImage(croppedBitmap)
+                showResult(result)
+            })
+    }
+
+    @Synchronized
+    private fun runInBackground(runnable: Runnable) {
+        handler.post(runnable)
+    }
+
+    private fun showResult(result: Result) {
+        textResult.text = result.result.toUpperCase()
+        layoutContainer.setBackgroundColor(getColorFromResult(result.result))
+    }
+
+    @Suppress("DEPRECATION")
+    private fun getColorFromResult(result: String): Int {
+        return if (result == getString(R.string.trees)) {
+            resources.getColor(R.color.light_green)
+        } else {
+            resources.getColor(R.color.red)
+        }
+    }
 }
